@@ -1,0 +1,18 @@
+user:
+  email:
+    max_length: 255
+  email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+  password:
+    min_length: 6
+
+category:
+  max_length: 20
+
+product:
+  name:
+    max_length: 50
+  description:
+    max_length: 100
+  image:
+    image_path: ["image/jpeg", "image/gif", "image/png"]
+    less_than: 5
