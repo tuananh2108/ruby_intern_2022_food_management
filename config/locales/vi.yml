@@ -1,0 +1,9 @@
+en:
+  activerecord:
+    errors:
+      models:
+        product:
+          attributes:
+            image:
+              wrong_format: "phải là một định dạng hình ảnh hợp lệ"
+              too_big: "Kích thước ảnh quá lớn"
