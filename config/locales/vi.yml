@@ -1,0 +1,22 @@
+en:
+  app_name: "Food Order"
+
+  layouts:
+    header:
+      home: "Trang chủ"
+      log_in: "Đăng nhập"
+
+    management_sidebar:
+      home: "Trang chủ"
+      category: "Danh mục"
+      product: "Sản phẩm"
+      user: "Người dùng"
+
+  activerecord:
+    errors:
+      models:
+        product:
+          attributes:
+            image:
+              wrong_format: "phải là một định dạng hình ảnh hợp lệ"
+              too_big: "Kích thước ảnh quá lớn"
