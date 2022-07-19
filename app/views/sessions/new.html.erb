@@ -1,0 +1,18 @@
+<!-- TODO -->
+<% provide :title, t(".title") %>
+<div class="col-md-12">
+  <div class="card">
+    <div class="card-header">
+      <h1><%= t ".title" %></h1>
+    </div>
+    <div class="card-body">
+      <%= form_for :session, url: login_path do |f| %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: "form-control" %>
+        <%= f.label :password %>
+        <%= f.password_field :password, class: "form-control" %>
+        <%= f.submit t(".title_btn"), class: "btn btn-primary mt-2" %>
+      <% end %>
+    </div>
+  </div>
+</div>

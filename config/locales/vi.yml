@@ -4,13 +4,18 @@ en:
   layouts:
     header:
       home: "Trang chủ"
-      log_in: "Đăng nhập"
+      log_out: "Đăng xuất"
 
     management_sidebar:
       home: "Trang chủ"
       category: "Danh mục"
       product: "Sản phẩm"
       user: "Người dùng"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      title_btn: "Đăng nhập"
 
   activerecord:
     errors:
