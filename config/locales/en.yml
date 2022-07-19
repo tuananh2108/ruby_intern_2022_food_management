@@ -1,4 +1,17 @@
 en:
+  app_name: "Food Order"
+
+  layouts:
+    header:
+      home: "Home"
+      log_in: "Log in"
+
+    management_sidebar:
+      home: "Home"
+      category: "Category"
+      product: "Product"
+      user: "User"
+
   activerecord:
     errors:
       models:
