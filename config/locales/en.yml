@@ -4,13 +4,18 @@ en:
   layouts:
     header:
       home: "Home"
-      log_in: "Log in"
+      log_out: "Log out"
 
     management_sidebar:
       home: "Home"
       category: "Category"
       product: "Product"
       user: "User"
+  
+  sessions:
+    new:
+      title: "Login"
+      title_btn: "Log in"
 
   activerecord:
     errors:

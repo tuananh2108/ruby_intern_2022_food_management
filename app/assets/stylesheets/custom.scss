@@ -44,6 +44,10 @@ textarea {
   margin-bottom: 10px;
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
+
 .fz-1 {
   font-size: 1rem;
 }
@@ -105,4 +109,18 @@ header.navbar ul li a:hover {
 .content {
   padding-top: 72px;
   margin-left: 300px;
+}
+
+// CSS for Card
+.card {
+  margin: 0 auto;
+  padding: 2px 16px;
+  background-color: $white-color;
+  box-shadow: 0 4px 8px 0 $shadow-color-nav;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 10px 0;
 }
