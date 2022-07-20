@@ -14,5 +14,6 @@ product:
   description:
     max_length: 100
   image:
-    image_path: ["image/jpeg", "image/gif", "image/png"]
+    image_path: ["image/img", "image/jpeg", "image/png"]
     less_than: 5
+  items: 5

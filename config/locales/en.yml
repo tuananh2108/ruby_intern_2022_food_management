@@ -2,15 +2,36 @@ en:
   app_name: "Food Order"
 
   layouts:
-    header:
-      home: "Home"
-      log_in: "Log in"
-
-    management_sidebar:
+    admin_page:
       home: "Home"
       category: "Category"
       product: "Product"
       user: "User"
+      log_out: "Log out"
+  
+  sessions:
+    new:
+      title: "Login"
+      title_btn: "Log in"
+  
+  products:
+    index:
+      title_page: "Product"
+      title: "Products"
+      btn_add: "Add New"
+      tbl_no: "No."
+      tbl_name: "Name"
+      tbl_desciption: "Description"
+      tbl_image: "Image"
+      tbl_price: "Unit Price"
+      tbl_category: "Category"
+      tbl_continue: "Continue"
+      tbl_feature: "Feature"
+      tbl_action: "Action"
+    product:
+      denominations: "VND"
+      btn_edit: "Edit"
+      btn_delete: "Delete"
 
   activerecord:
     errors:
