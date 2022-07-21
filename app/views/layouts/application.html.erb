@@ -10,16 +10,8 @@
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
 
-  <body>
-    <%= render "layouts/header" %>
-    <%= render "layouts/management_sidebar" %>
-    <!-- content -->
-    <div class="container content">
-        <div class="container-fluid">
-            <div class="row">
-              <%= yield %>
-            </div>
-        </div>
-    </div>
+  <body class="bg-light">
+    <!-- Phan nay em se check user xem co phai admin khong. neu phai thi render admin page, con neu khong thi render client page -->
+    <%= render "layouts/admin_page" %>
   </body>
 </html>
