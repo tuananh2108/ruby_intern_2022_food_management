@@ -1,0 +1,51 @@
+@import "bootstrap/scss/bootstrap";
+@import "color.scss";
+
+.align-center {
+  align-items: center;
+}
+
+.img-150 {
+  width: 150px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+header {
+  width: calc(100% - 300px);
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar ul li:first-child {
+  height: 69px;
+  text-align: center;
+  background-color: $bg-logo;
+}
+
+.content {
+  padding-top: 72px;
+  margin-left: 300px;
+}
+
+.login_page {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+// Message Error
+#error_explanation {
+  color: $red-color;
+  ul {
+    color: $red-color;
+    margin: 0 0 30px;
+  }
+}

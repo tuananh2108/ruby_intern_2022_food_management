@@ -1,21 +1,63 @@
 en:
   app_name: "Food Order"
 
-  layouts:
-    header:
-      home: "Trang chủ"
-      log_out: "Đăng xuất"
+  admin:
+    layouts:
+      admin_page:
+        home: "Trang chủ"
+        category: "Danh mục"
+        product: "Sản phẩm"
+        user: "Người dùng"
+        log_out: "Đăng xuất"
 
-    management_sidebar:
-      home: "Trang chủ"
-      category: "Danh mục"
-      product: "Sản phẩm"
-      user: "Người dùng"
+    products:
+      index:
+        title_page: "Sản phẩm"
+        title: "Danh sách Sản phẩm"
+        btn_add: "Thêm mới"
+        tbl_no: "STT"
+        tbl_name: "Tên"
+        tbl_desciption: "Mô tả"
+        tbl_image: "Ảnh"
+        tbl_price: "Đơn giá"
+        tbl_category: "Danh mục"
+        tbl_continue: "Hoạt động"
+        tbl_feature: "Nổi bật"
+        tbl_action: "Chức năng"
+      new:
+        title_page: "Sản phẩm"
+        title: "Thêm sản phẩm mới" 
+      create:
+        flash_success: "Thêm mới thành công!"
+        flash_danger: "Thêm mới thất bại!"
+      product:
+        btn_edit: "Sửa"
+        btn_delete: "Xóa"
+        denominations: "VND"
+      form:
+        name: "Tên"
+        category: "Danh mục"
+        description: "Mô tả"
+        image: "Ảnh"
+        unit_price: "Đơn giá"
+        discontinued: "Còn bán?"
+        featured: "Nổi bật?"
+        denominations: "VND"
+        choose_file: "Chọn tập tin"
+        btn_add: "Thêm"
 
   sessions:
     new:
       title: "Đăng nhập"
       title_btn: "Đăng nhập"
+    create:
+      flash_success: "Đăng nhập thành công!"
+      flash_danger: "Đăng nhập thất bại!"
+
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu chứa"
+      error: "lỗi"
 
   activerecord:
     errors:
