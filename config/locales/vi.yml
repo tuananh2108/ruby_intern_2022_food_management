@@ -2,15 +2,37 @@ en:
   app_name: "Food Order"
 
   layouts:
-    header:
-      home: "Trang chủ"
-      log_out: "Đăng xuất"
-
-    management_sidebar:
+    admin_page:
       home: "Trang chủ"
       category: "Danh mục"
       product: "Sản phẩm"
       user: "Người dùng"
+      log_out: "Đăng xuất"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      title_btn: "Đăng nhập"
+
+  products:
+    index:
+      title_page: "Sản phẩm"
+      title: "Danh sách Sản phẩm"
+      btn_add: "Thêm mới"
+      denominations: "VND"
+      tbl_no: "STT"
+      tbl_name: "Tên"
+      tbl_image: "Ảnh"
+      tbl_price: "Đơn giá"
+      tbl_category: "Danh mục"
+      tbl_continue: "Hoạt động"
+      tbl_feature: "Nổi bật"
+      tbl_action: "Chức năng"
+    product:
+      tbl_desciption: "Mô tả"
+      btn_edit: "Sửa"
+      btn_delete: "Xóa"
+
 
   sessions:
     new:
