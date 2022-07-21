@@ -1,37 +1,63 @@
 en:
   app_name: "Food Order"
 
-  layouts:
-    admin_page:
-      home: "Home"
-      category: "Category"
-      product: "Product"
-      user: "User"
-      log_out: "Log out"
-  
+  admin:
+    layouts:
+      admin_page:
+        home: "Home"
+        category: "Category"
+        product: "Product"
+        user: "User"
+        log_out: "Log out"
+
+    products:
+      index:
+        title_page: "Product"
+        title: "Products"
+        btn_add: "Add New"
+        tbl_no: "No."
+        tbl_name: "Name"
+        tbl_desciption: "Description"
+        tbl_image: "Image"
+        tbl_price: "Unit Price"
+        tbl_category: "Category"
+        tbl_continue: "Continue"
+        tbl_feature: "Feature"
+        tbl_action: "Action"
+      new:
+        title_page: "Product"
+        title: "Add New Product" 
+      create:
+        flash_success: "Successfully added new!"
+        flash_danger: "New add failed!"
+      product:
+        btn_edit: "Edit"
+        btn_delete: "Delete"
+        denominations: "VND"
+      form:
+        name: "Name"
+        category: "Category"
+        description: "Description"
+        image: "Image"
+        unit_price: "Unit Price"
+        discontinued: "Discontinued"
+        featured: "Featured"
+        denominations: "VND"
+        choose_file: "Choose file"
+        btn_add: "Add"
+
   sessions:
     new:
       title: "Login"
       title_btn: "Log in"
-  
-  products:
-    index:
-      title_page: "Product"
-      title: "Products"
-      btn_add: "Add New"
-      tbl_no: "No."
-      tbl_name: "Name"
-      tbl_desciption: "Description"
-      tbl_image: "Image"
-      tbl_price: "Unit Price"
-      tbl_category: "Category"
-      tbl_continue: "Continue"
-      tbl_feature: "Feature"
-      tbl_action: "Action"
-    product:
-      denominations: "VND"
-      btn_edit: "Edit"
-      btn_delete: "Delete"
+    create:
+      flash_success: "Successfully loged in!"
+      flash_danger: "Failed login!"
+
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+      error: "errors"
 
   activerecord:
     errors:

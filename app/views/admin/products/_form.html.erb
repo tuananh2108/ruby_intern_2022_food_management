@@ -1,0 +1,48 @@
+<%= form_for @product, :url => {:controller => "products"} do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <%= f.label :name, t(".name") %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="form-group col-md-6">
+      <%= f.label :category_id, t(".category") %>
+      <%= collection_select(:product, :category_id, @categories, :id, :name, {}, {class: "form-control"}) %>
+    </div>
+    <div class="form-group col-md-12">
+      <%= f.label :description, t(".description") %>
+      <%= f.text_area :description, class: "form-control" %>
+    </div>
+    <div class="form-group col-md-6">
+      <%= f.label :image, t(".image") %>
+      <div class="input-group">
+        <div class="custom-file">
+          <%= f.file_field :image, class: "form-control", id: "inputGroupFile01", "aria-describedby": "inputGroupFileAddon01" %>
+          <label class="custom-file-label" for="inputGroupFile01"><%= t ".choose_file" %></label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <%= f.label :unit_price, t(".unit_price") %>
+      <div class="input-group">
+        <%= f.number_field :unit_price, class: "form-control" %>
+        <div class="input-group-append">
+          <span class="input-group-text"><%= t ".denominations" %></span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <div class="form-check">
+        <%= f.check_box :is_discontinued, class: "form-check-input" %>
+        <%= f.label :is_discontinued, t(".discontinued"), class: "form-check-label" %>
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <div class="form-check">
+        <%= f.check_box :is_featured, class: "form-check-input" %>
+        <%= f.label :is_featured, t(".featured"), class: "form-check-label" %>
+      </div>
+    </div>
+  </div>
+  <%= f.submit t(".btn_add"), class: "btn btn-primary" %>
+<% end %>

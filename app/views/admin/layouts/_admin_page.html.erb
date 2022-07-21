@@ -19,16 +19,16 @@
   <div class="sidebar bg-primary shadow">
     <ul class="nav flex-column">
       <li class="shadow-sm">
-        <%= link_to t("app_name"), "home", class: "nav-link logo text-white h1" %>
+        <%= link_to t("app_name"), admin_root_path, class: "nav-link logo text-white h1" %>
       </li>
       <li class="nav-item">
-        <%= link_to t(".home"), "home", class: "nav-link h4 bg-primary text-white" %>
+        <%= link_to t(".home"), admin_root_path, class: "nav-link h4 bg-primary text-white" %>
       </li>
       <li class="nav-item">
         <%= link_to t(".category"), "#", class: "nav-link h4 bg-primary text-white" %>
       </li>
       <li class="nav-item">
-        <%= link_to t(".product"), "products", class: "nav-link h4 bg-primary text-white" %>
+        <%= link_to t(".product"), admin_products_path, class: "nav-link h4 bg-primary text-white" %>
       </li>
       <li class="nav-item">
         <%= link_to t(".user"), "#", class: "nav-link h4 bg-primary text-white" %>
@@ -38,6 +38,13 @@
 
   <div class="content">
     <div class="container-fluid">
+      <div class="row mt-4 mb-3 mx-4">
+        <div class="col-md-12">
+          <% flash.each do |message_type, message| %>
+            <div class="alert alert-<%= message_type %>" role="alert"><%= message %></div>
+          <% end %>
+        </div>
+      </div>
       <%= yield %>
     </div>
   </div>
