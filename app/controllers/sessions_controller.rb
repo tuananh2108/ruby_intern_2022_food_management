@@ -6,8 +6,7 @@ class SessionsController < ApplicationController
     if user&.authenticate params[:session][:password]
       check_role user
     else
-      # TODO
-      # flash[:error]
+      flash[:danger] = t ".flash_danger"
       render :new
     end
   end
@@ -21,7 +20,8 @@ class SessionsController < ApplicationController
   def check_role user
     if user.admin
       log_in user
-      redirect_to root_path
+      flash[:success] = t ".flash_success"
+      redirect_to admin_root_path
     else
       # redirect to client page
       # TODO

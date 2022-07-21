@@ -1,0 +1,36 @@
+<% provide :title, t(".title_page") %>
+<div class="row mt-2 mb-5 mx-4">
+  <div class="col-md-12">
+    <div class="card shadow">
+      <div class="card-header d-flex justify-content-between align-center">
+        <h1><%= t ".title" %></h1>
+        <div>
+          <%= link_to t(".btn_add"), new_admin_product_path, class: "btn btn-success" %>
+        </div>
+      </div>
+      <div class="card-body pt-0 pb-2">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><%= t ".tbl_no" %></th>
+              <th><%= t ".tbl_name" %></th>
+              <th><%= t ".tbl_desciption" %></th>
+              <th><%= t ".tbl_image" %></th>
+              <th><%= t ".tbl_price" %></th>
+              <th><%= t ".tbl_category" %></th>
+              <th><%= t ".tbl_continue" %></th>
+              <th><%= t ".tbl_feature" %></th>
+              <th><%= t ".tbl_action" %></th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= render partial: "product", collection: @products %>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-footer d-flex justify-content-center">
+        <%== pagy_bootstrap_nav(@pagy) %>
+      </div>
+    </div>
+  </div>
+</div>
