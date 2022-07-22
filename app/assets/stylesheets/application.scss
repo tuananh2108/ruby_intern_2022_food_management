@@ -8,6 +8,8 @@
 .img-150 {
   width: 150px;
   height: 80px;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 header {
@@ -37,4 +39,13 @@ header {
   height: 60vh;
   display: flex;
   align-items: center;
+}
+
+// Message Error
+#error_explanation {
+  color: $red-color;
+  ul {
+    color: $red-color;
+    margin: 0 0 30px;
+  }
 }

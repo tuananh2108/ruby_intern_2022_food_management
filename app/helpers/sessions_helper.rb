@@ -11,6 +11,12 @@ module SessionsHelper
     current_user.present?
   end
 
+  def check_login?
+    return if logged_in?
+
+    redirect_to login_path
+  end
+
   def log_out
     session.delete(:user_id)
     @current_user = nil
